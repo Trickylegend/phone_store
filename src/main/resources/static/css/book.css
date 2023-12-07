@@ -1,0 +1,26 @@
+
+.star-rating-input {
+    font-size: 0;
+}
+
+.star-rating-input input[type="radio"] {
+    display: none;
+}
+
+.star-rating-input label {
+    font-size: 25px; /* Размер звезд */
+    color: #ccc; /* Цвет пустой звезды */
+    cursor: pointer;
+}
+
+.star-rating-input input[type="radio"]:checked ~ label {
+    color: gold; /* Цвет заполненной звезды */
+}
+
+.star-rating-input label:hover, .star-rating-input label:hover ~ label {
+    color: gold; /* Цвет звезды при наведении */
+}
+
+.star-rating .fa-star, .star-rating .fa-star-half-alt {
+    color: gold;
+}
